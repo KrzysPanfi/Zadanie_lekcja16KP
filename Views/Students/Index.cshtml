@@ -1,0 +1,32 @@
+﻿@model List<Student>
+<h1>Students</h1>
+<p>
+    Lorem ipsum...
+   
+</p>
+<table class="table-hover">
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>LName</td>
+        <td>Email</td>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach(var st in Model)
+    {
+        <tr>
+            <td>
+                @st.StudentId
+            </td>
+            <td>
+                @st.LName
+                
+            </td>
+            <td>
+                @st.Email
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
