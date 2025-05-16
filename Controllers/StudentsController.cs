@@ -24,9 +24,9 @@ public class StudentsController : Controller
         list.Add(s2);
         return View(list);
     }
-
+    [HttpPost]
     public ViewResult Create()
     {
-        
+        return View("Index");
     }
 }
